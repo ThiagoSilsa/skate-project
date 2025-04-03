@@ -6,6 +6,8 @@
         height: 100%;
         background-image: linear-gradient(to bottom, #141E26, #52498C);
         background-size: cover;
+        background-repeat: no-repeat;
+
         display: flex;
         justify-content: center;
         align-items: center;
