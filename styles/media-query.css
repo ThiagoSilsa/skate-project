@@ -1,0 +1,47 @@
+@media screen and (min-width: 1200px){
+    
+    
+
+    body{
+        background-image: url(../img/skate.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    main{
+        min-height: 350px;
+        max-width: 1250px;
+        max-height: 98vh;
+
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+        margin-bottom: 5%;
+
+    }
+    main>section#principal  {
+        width: 40%;
+        align-content: center;
+    }
+
+    main>section#principal>article#photo {
+        display: none;
+    }
+    main>section#price{
+        width: 35%;
+        align-content: center;
+    }
+    main>section#whyus{
+        width: 25%;
+        align-content: center;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    main >footer{
+        display: none;
+    }
+    
+
+
+}
+

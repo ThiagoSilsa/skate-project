@@ -27,7 +27,6 @@ main {
     background-color: white;
     margin: 25px 0px;
     border-radius: 25px;
-    display: block;
     max-width: 600px;
     min-width: 290px;
 }
@@ -63,13 +62,11 @@ main>section#principal article#skateshcool p>strong {
 main>section#principal>article#photo {
     height: 285px;
     background-color: rgba(0, 0, 0, 0.212);
-    color: white;
     box-shadow: inset 6px 6px 25px 0px rgba(0, 0, 0, 0.555);
     background-image: url(../img/skate.jpg);
     background-position: 50% 65%;
     background-size: cover;
 }
-
 
 main>section#price {
 
