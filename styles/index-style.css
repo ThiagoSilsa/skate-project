@@ -1,0 +1,64 @@
+
+/* Principal Page */
+main>section >article#photo {
+    height: 285px;
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: inset 6px 6px 25px 0px rgba(0, 0, 0, 0.555);
+    background-image: url(../img/skate.jpg);
+    background-position: 50% 65%;
+    background-size: cover;
+}
+
+main>section#price {
+
+    color: white;
+    background-color: var(--lightb);
+    padding: 25px
+}
+
+main>section#price p {
+    font-weight: lighter;
+}
+
+main>section#price p>strong {
+    font-size: 2em;
+}
+
+main>section#price a {
+    box-sizing: border-box;
+    background-color: var(--brighter);
+    padding: 20px;
+    margin: auto;
+    display: block;
+
+    font-size: 1.8em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+    transition: border 0.3s ease;
+}
+
+main>section#price a:hover {
+    border: 2px solid white;
+    font-weight: bolder;
+
+}
+
+
+main>section#whyus {
+    color: white;
+    background-color: #526474;
+
+    padding: 25px;
+
+}
+
+main>section#whyus ul li {
+    margin: 10px 0px;
+    list-style-type: none;
+}
+

@@ -29,7 +29,7 @@
 
     }
 
-    main>section#principal {
+    main>section#top {
         width: 40%;
         height: 95%;
         margin-bottom: 0px;
@@ -37,6 +37,9 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
+    }
+    main>section > header  h1{
+        text-align: left;
     }
 
     main>section#price {

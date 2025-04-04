@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* Setting the colors i will use */
+
+:root {
+    --blackblue: #141E26;
+    --lightb: #394A59;
+    --bright: #cf9a76;
+    --brighter: #d37a3f;
+    --purple1: #52498C;
+    --mag1: #8C5889;
+}
+
+
+body {}
+
+section#video {
+    display: block;
+    margin: auto;
+    background-color: var(--blackblue);
+}
+
+section#video>iframe {
+    min-height: 300px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+section#videolinks {
+
+    background-color: #394A59;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+
+
+section#videolinks>a#link4 ,a#link3 ,a#link2 ,a#link1{
+    width: 50%;
+}
+
+section#videolinks>a {
+    box-sizing: border-box;
+    background-color: #d37a3f;
+    margin: 10px;
+    padding: 8px;
+    max-width: 35%;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    transition: border 0.3s ease;
+}
+
+section#videolinks>a:hover {
+    background-color: var(--mag1);
+
+    font-weight: bolder;
+
+}
+section#videolinks>a:active{
+    border: 2px solid white;
+    transition: 0s;
+}
+section#news{
+    padding: 20px 25px 0px 25px;
+}
+section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+section#news> a{
+    box-sizing: border-box;
+    background-color: var(--brighter);
+    padding: 10px;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+
+    font-size: 1.8em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+    transition: border 0.3s ease;
+}
+
+main>section#news a:hover {
+    font-weight: bolder;
+
+}
+
+section#social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+section#social > a > img{
+
+    border-radius: 50%;
+    width: 100px;
+    box-shadow: 1px 1px 3px 2px black;
+    transition:  0.3s ease;
+}
+section#social > a > img:hover{
+    transform: translate(0px, -3px);
+    border: 2px solid var(--brighter);
+    box-shadow: 1px 4px 5px 1px black;
+}

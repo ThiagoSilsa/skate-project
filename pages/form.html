@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <section id="form">
+        <h1>Fill in to receive all the news</h1>
+        <form action="form.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Personal</legend>
+                <p>
+                    <label for="iusu"> Usuário:</label>
+                    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="26" size="26">
+                </p>
+                
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email"
+                    placeholder="@gmail.com" minlength="5" maxlength="26" size="26">
+                </p>
+                <p>
+                    <label for="iel">Tel:</label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel"
+                    placeholder="(XX) X XXXX-XXXX" minlength="5" maxlength="26" size="26">
+                </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Location</legend>
+                <p>
+                    <label for="istate">State:</label>
+                    <select name="state" id="istate" required>
+                        <optgroup label="North">
+                            <option value="AC">Acre</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Northeast">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Central-West">
+                            <option value="DF">Distrito Federal</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                        </optgroup>
+                        <optgroup label="Southeast">
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ" selected>Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="South">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="istreet">Street:</label>
+                    <input type="text" name="street" id="istreet" required autocomplete="street-address" minlength="5" maxlength="none" size="26">
+                </p>
+                <p>
+                    <label for="ineighborhood">Neighborhood:</label>
+                    <input type="neighborhood" name="neighborhood" id="ineighborhood" required autocomplete="off" minlength="5" maxlength="none" size="26">
+                </p>
+                <p>
+                    <label for="ibatch">batch: </label>
+                    <input type="text" name="batch" id="ibatch" required autocomplete="off" minlength="5" maxlength="none" size="26">
+                </p>
+                <p>
+                    <label for="iblock">Block:</label>
+                    <input type="text" name="block" id="iblock" required autocomplete="off" minlength="5" maxlength="none" size="26">
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <a href="page2.html">Voltar</a>
+            </p>
+            
+        </form>
+    </section>
+    <main></main>
+</body>
+</html>
