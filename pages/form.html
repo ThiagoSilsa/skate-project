@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="shortcut icon" href="../img/skatefav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/form-style.css">
 </head>
 <body>
-    <section id="form">
+    <main>
         <h1>Fill in to receive all the news</h1>
         <form action="form.php" method="get" autocomplete="on">
-            <fieldset>
+            <fieldset id="personal">
                 <legend>Personal</legend>
                 <p>
-                    <label for="iusu"> Usuário:</label>
+                    <label for="iusu"> Usuário</label><br>
                     <input type="text" name="usu" id="iusu" required minlength="5" maxlength="26" size="26">
                 </p>
                 
                 <p>
-                    <label for="iemail">Email:</label>
+                    <label for="iemail">Email</label><br>
                     <input type="email" name="email" id="iemail" required autocomplete="email"
                     placeholder="@gmail.com" minlength="5" maxlength="26" size="26">
                 </p>
                 <p>
-                    <label for="iel">Tel:</label>
+                    <label for="iel">Tel</label><br>
                     <input type="tel" name="tel" id="itel" required autocomplete="tel"
                     placeholder="(XX) X XXXX-XXXX" minlength="5" maxlength="26" size="26">
                 </p>
@@ -31,7 +33,7 @@
             <fieldset>
                 <legend>Location</legend>
                 <p>
-                    <label for="istate">State:</label>
+                    <label for="istate">State</label><br>
                     <select name="state" id="istate" required>
                         <optgroup label="North">
                             <option value="AC">Acre</option>
@@ -73,19 +75,19 @@
                     </select>
                 </p>
                 <p>
-                    <label for="istreet">Street:</label>
+                    <label for="istreet">Street</label><br>
                     <input type="text" name="street" id="istreet" required autocomplete="street-address" minlength="5" maxlength="none" size="26">
                 </p>
                 <p>
-                    <label for="ineighborhood">Neighborhood:</label>
+                    <label for="ineighborhood">Neighborhood</label><br>
                     <input type="neighborhood" name="neighborhood" id="ineighborhood" required autocomplete="off" minlength="5" maxlength="none" size="26">
                 </p>
                 <p>
-                    <label for="ibatch">batch: </label>
+                    <label for="ibatch">batch </label><br>
                     <input type="text" name="batch" id="ibatch" required autocomplete="off" minlength="5" maxlength="none" size="26">
                 </p>
                 <p>
-                    <label for="iblock">Block:</label>
+                    <label for="iblock">Block</label><br>
                     <input type="text" name="block" id="iblock" required autocomplete="off" minlength="5" maxlength="none" size="26">
                 </p>
             </fieldset>
@@ -96,7 +98,6 @@
             </p>
             
         </form>
-    </section>
-    <main></main>
+    </main>
 </body>
 </html>

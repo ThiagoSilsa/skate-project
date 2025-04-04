@@ -11,9 +11,6 @@
     --mag1: #8C5889;
 }
 
-
-body {}
-
 section#video {
     display: block;
     margin: auto;
@@ -37,9 +34,10 @@ section#videolinks {
 
 }
 
-
-
-section#videolinks>a#link4 ,a#link3 ,a#link2 ,a#link1{
+section#videolinks>a#link4,
+a#link3,
+a#link2,
+a#link1 {
     width: 50%;
 }
 
@@ -67,18 +65,22 @@ section#videolinks>a:hover {
     font-weight: bolder;
 
 }
-section#videolinks>a:active{
+
+section#videolinks>a:active {
     border: 2px solid white;
     transition: 0s;
 }
-section#news{
+
+section#news {
     padding: 20px 25px 0px 25px;
 }
+
 section h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-section#news> a{
+
+section#news>a {
     box-sizing: border-box;
     background-color: var(--brighter);
     padding: 10px;
@@ -108,15 +110,89 @@ section#social {
     justify-content: space-evenly;
 }
 
-section#social > a > img{
+section#social>a>img {
 
     border-radius: 50%;
     width: 100px;
     box-shadow: 1px 1px 3px 2px black;
-    transition:  0.3s ease;
+    transition: 0.3s ease;
 }
-section#social > a > img:hover{
+
+section#social>a>img:hover {
     transform: translate(0px, -3px);
     border: 2px solid var(--brighter);
     box-shadow: 1px 4px 5px 1px black;
 }
+/* 
+@media screen and (min-width: 768px) {
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        background: linear-gradient(to bottom, #141E26, #52498C) no-repeat fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        margin: 0px 10px;
+        min-height: 500px;
+        height: 80vh;
+        max-width: 1200px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        transition: all 0.5s ease;
+  
+
+    }
+
+
+    section#header{
+        flex: auto;
+        align-content: center;
+        width: 10%;
+        height: 40%;
+        order:1;
+        background-color: aqua;
+    }
+    section#videoframe{
+        flex: auto;
+        width: 40%;
+        height: 50%;
+        order:4;
+        background-color: #d37a3f;
+    }
+    section#videolinks{
+        flex: auto;
+        order: 2;
+        height:50%;
+        width: 10%;
+    }
+    section#news{
+        flex: auto;
+        width: 60%;
+        height: 40%;
+        order:3;
+        background-color: #8C5889;
+    }
+    section#sociallinks{
+        flex: auto;
+        width: 60%;
+        height: 20%;
+        order:5;
+        background-color: blueviolet;
+    }
+    footer{
+        flex: auto;
+        width: 100%;
+        height: 10%;
+        order:6;
+        background-color: yellowgreen;
+    }
+} */
