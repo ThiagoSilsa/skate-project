@@ -1,0 +1,61 @@
+/* Media Query for tablets and bigger screens */
+@media screen and (min-width: 768px) {
+
+    html,
+    body {
+        height: 100%;
+
+
+
+    }
+
+    body {
+        background: linear-gradient(to bottom, #141E26, #52498C) no-repeat fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        margin: 0px 10px;
+        min-height: 500px;
+        height: 80vh;
+        max-width: 1200px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        transition: all 0.5s ease;
+
+    }
+
+    main>section#principal {
+        width: 40%;
+        height: 95%;
+        margin-bottom: 0px;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    main>section#price {
+        width: 30%;
+        height: 95%;
+        align-content: center;
+    }
+
+    main>section#whyus {
+        width: 30%;
+        height: 95%;
+        align-content: center;
+        border-top-right-radius: 25px;
+    }
+
+    main>footer {
+        height: 5%;
+        width: 100%;
+        margin: -18px;
+    }
+
+}
