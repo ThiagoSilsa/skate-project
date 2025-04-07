@@ -15,7 +15,9 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-body, html{
+
+body,
+html {
     height: 100%;
     width: 98%;
     background-size: auto;
@@ -23,7 +25,8 @@ body, html{
     background-repeat: no-repeat;
     background-image: linear-gradient(#141E26, #52498C, #8C5889);
 }
-main{
+
+main {
     margin: 25px;
     padding: 20px;
     background-color: white;
@@ -34,31 +37,46 @@ main{
     max-height: 880px;
     max-width: 550px;
 }
-main h1::before{
+
+main h1::before {
     content: "📓";
 }
-fieldset{
+
+fieldset {
     text-align: center;
 }
- 
-legend, label{
+
+legend,
+label {
     font-variant: small-caps;
 }
-input, select{
+
+input,
+select {
     border-radius: 5px;
     background-color: #8c58891a;
 
     height: 30px;
     width: 70%;
-    
+
     border: none;
 }
-input:hover, select:hover{
+
+input:hover,
+select:hover {
     background-color: #8c588980;
 }
 
-div#final > p > input, a{
+div#final>p>input,
+a {
+
+    height: 25px;
     display: block;
     margin: auto;
     text-align: center;
+}
+
+#final>p>input,
+a:hover {
+    cursor: pointer;
 }
