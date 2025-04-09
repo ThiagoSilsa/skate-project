@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Media Query for tablets and bigger screens */
 @media screen and (min-width: 770px) {
 
@@ -8,6 +10,7 @@
 
     body {
         background: linear-gradient(to bottom, #141E26, #52498C) no-repeat fixed;
+        /* Flex-box to centralizing the main content */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,6 +22,7 @@
         height: 80vh;
         max-width: 1200px;
 
+        /* Uding flex-boxe to organize  */
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -33,7 +37,9 @@
 
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-between;
+        justify-content: space-between; 
+
+
     }
     main>section > header  h1{
         text-align: left;

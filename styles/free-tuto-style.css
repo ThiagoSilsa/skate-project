@@ -12,8 +12,6 @@
 }
 
 section#video {
-    display: block;
-    margin: auto;
     background-color: var(--blackblue);
 }
 
@@ -21,6 +19,8 @@ section#video>iframe {
     min-height: 300px;
     height: 100%;
     width: 100%;
+
+    /* Centralizing */
     display: block;
     margin: auto;
 }
@@ -28,22 +28,20 @@ section#video>iframe {
 section#videolinks {
 
     background-color: #394A59;
+
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 
 }
 
-section#videolinks>a#link4,
-a#link3,
-a#link2,
-a#link1 {
-    width: 50%;
-}
+
 
 section#videolinks>a {
     box-sizing: border-box;
     background-color: #d37a3f;
+    width: 50%;
     margin: 10px;
     padding: 8px;
     max-width: 35%;
@@ -124,7 +122,7 @@ section#social>a>img:hover {
     box-shadow: 1px 4px 5px 1px black;
 }
 
-
+/* Media query */
 @media screen and (min-width: 770px) {
 
     html,
@@ -146,6 +144,7 @@ section#social>a>img:hover {
         height: 80vh;
         max-width: 1200px;
 
+        /* Using grid layout to organize */
         display: grid;
         grid-template-areas:
             'header header'
@@ -155,6 +154,7 @@ section#social>a>img:hover {
             'videolinks sociallinks'
             'footer footer '
         ;
+        /* Setting the grid areas in % */
         grid-auto-rows: 15% 20% 20% 20% 20% 5%;
         grid-auto-columns: 60% 40%;
         transition: all 0.5s ease;
@@ -162,6 +162,9 @@ section#social>a>img:hover {
 
     section#header h1{
         text-align: center;
+    }
+    main>section>header {
+        padding: 10px 25px 0px 25px;
     }
 
     section#header {
@@ -174,6 +177,7 @@ section#social>a>img:hover {
     }
 
     section#videolinks {
+        align-items: center;
         align-content: center;
         grid-area: videolinks;
     }
@@ -199,6 +203,13 @@ section#social>a>img:hover {
         
         grid-area: sociallinks;
 
+    }
+    section#social>a>img {
+
+        border-radius: 50%;
+        max-width: 85px;
+        box-shadow: 1px 1px 3px 2px black;
+        transition: 0.3s ease;
     }
 
     footer {

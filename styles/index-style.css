@@ -1,24 +1,33 @@
+@charset "UTF-8";
+
+:root {
+    --blackblue: #141E26;
+    --lightb: #394A59;
+    --bright: #cf9a76;
+    --brighter: #d37a3f;
+    --purple1: #52498C;
+    --mag1: #8C5889;
+}
 
 /* Principal Page */
-main>section >article#photo {
+main>section>article#photo {
     height: 285px;
-    background-color: rgba(0, 0, 0, 0.212);
     box-shadow: inset 6px 6px 25px 0px rgba(0, 0, 0, 0.555);
+
+    background-color: var(--blackblue);
     background-image: url(../img/skate.jpg);
     background-position: 50% 65%;
     background-size: cover;
+
 }
 
 main>section#price {
-
     color: white;
     background-color: var(--lightb);
     padding: 25px
 }
 
-main>section#price p {
-    font-weight: lighter;
-}
+
 
 main>section#price p>strong {
     font-size: 2em;
@@ -36,6 +45,9 @@ main>section#price a {
     color: white;
     text-decoration: none;
 
+    /* Using a transparent border to not move the buttom when
+    the mouse is over it and a border is added
+    */
     border: 2px solid transparent;
     border-radius: 15px;
 
@@ -61,4 +73,3 @@ main>section#whyus ul li {
     margin: 10px 0px;
     list-style-type: none;
 }
-
